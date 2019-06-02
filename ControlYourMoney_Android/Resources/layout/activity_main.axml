@@ -1,0 +1,27 @@
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <Button
+        android:text="My First Mobile App!"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:id="@+id/ButtonTest"
+        android:layout_below="@+id/InputTest"
+        android:layout_alignParentTop="false"
+        android:layout_centerInParent="true" />
+    <EditText
+        android:layout_width="229.5dp"
+        android:layout_height="112.0dp"
+        android:id="@+id/InputTest"
+        android:layout_centerInParent="false"
+        android:layout_centerVertical="false"
+        android:layout_centerHorizontal="true"
+        android:layout_marginRight="43.0dp" />
+</RelativeLayout>
