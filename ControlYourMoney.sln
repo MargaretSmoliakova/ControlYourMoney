@@ -5,7 +5,11 @@ VisualStudioVersion = 16.0.28606.126
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ControlYourMoney_Android", "ControlYourMoney_Android\ControlYourMoney_Android.csproj", "{4DCE2021-5669-40D8-965E-3BDCE9F7B046}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ControlYourMoney", "ControlYourMoney\ControlYourMoney.csproj", "{F40D14FC-7865-465C-A2B6-4D43BAE8BAB5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ControlYourMoney_API", "ControlYourMoney\ControlYourMoney_API.csproj", "{F40D14FC-7865-465C-A2B6-4D43BAE8BAB5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ControlYourMoney_Commands", "ClassLibrary1\ControlYourMoney_Commands.csproj", "{69A97971-1667-48E8-AC6C-299393D162FA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ControlYourMoney_Queries", "ClassLibrary2\ControlYourMoney_Queries.csproj", "{E46767F4-3448-498A-9D20-D8EE34F077CC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,6 +27,14 @@ Global
 		{F40D14FC-7865-465C-A2B6-4D43BAE8BAB5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F40D14FC-7865-465C-A2B6-4D43BAE8BAB5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F40D14FC-7865-465C-A2B6-4D43BAE8BAB5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{69A97971-1667-48E8-AC6C-299393D162FA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{69A97971-1667-48E8-AC6C-299393D162FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{69A97971-1667-48E8-AC6C-299393D162FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{69A97971-1667-48E8-AC6C-299393D162FA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E46767F4-3448-498A-9D20-D8EE34F077CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E46767F4-3448-498A-9D20-D8EE34F077CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E46767F4-3448-498A-9D20-D8EE34F077CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E46767F4-3448-498A-9D20-D8EE34F077CC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
