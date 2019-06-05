@@ -5,11 +5,13 @@ VisualStudioVersion = 16.0.28606.126
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ControlYourMoney_Android", "ControlYourMoney_Android\ControlYourMoney_Android.csproj", "{4DCE2021-5669-40D8-965E-3BDCE9F7B046}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ControlYourMoney_API", "ControlYourMoney\ControlYourMoney_API.csproj", "{F40D14FC-7865-465C-A2B6-4D43BAE8BAB5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ControlYourMoney_API", "ControlYourMoney_API\ControlYourMoney_API.csproj", "{B081AA65-430B-4824-BE88-CE37D60C8B5A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ControlYourMoney_Commands", "ClassLibrary1\ControlYourMoney_Commands.csproj", "{69A97971-1667-48E8-AC6C-299393D162FA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ControlYourMoney_Commands", "ControlYourMoney_Commands\ControlYourMoney_Commands.csproj", "{54E64BA1-4C13-4241-BE7E-6389B02B6591}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ControlYourMoney_Queries", "ClassLibrary2\ControlYourMoney_Queries.csproj", "{E46767F4-3448-498A-9D20-D8EE34F077CC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ControlYourMoney_Queries", "ControlYourMoney_Queries\ControlYourMoney_Queries.csproj", "{34A04C89-B6AB-4BB8-B02A-65ADCD7A8628}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassLibrary1", "ClassLibrary1\ClassLibrary1.csproj", "{10F62594-CC8D-425A-A6C0-9E81C210BB7B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,18 +25,22 @@ Global
 		{4DCE2021-5669-40D8-965E-3BDCE9F7B046}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4DCE2021-5669-40D8-965E-3BDCE9F7B046}.Release|Any CPU.Build.0 = Release|Any CPU
 		{4DCE2021-5669-40D8-965E-3BDCE9F7B046}.Release|Any CPU.Deploy.0 = Release|Any CPU
-		{F40D14FC-7865-465C-A2B6-4D43BAE8BAB5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F40D14FC-7865-465C-A2B6-4D43BAE8BAB5}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F40D14FC-7865-465C-A2B6-4D43BAE8BAB5}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F40D14FC-7865-465C-A2B6-4D43BAE8BAB5}.Release|Any CPU.Build.0 = Release|Any CPU
-		{69A97971-1667-48E8-AC6C-299393D162FA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{69A97971-1667-48E8-AC6C-299393D162FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{69A97971-1667-48E8-AC6C-299393D162FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{69A97971-1667-48E8-AC6C-299393D162FA}.Release|Any CPU.Build.0 = Release|Any CPU
-		{E46767F4-3448-498A-9D20-D8EE34F077CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{E46767F4-3448-498A-9D20-D8EE34F077CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{E46767F4-3448-498A-9D20-D8EE34F077CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{E46767F4-3448-498A-9D20-D8EE34F077CC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B081AA65-430B-4824-BE88-CE37D60C8B5A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B081AA65-430B-4824-BE88-CE37D60C8B5A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B081AA65-430B-4824-BE88-CE37D60C8B5A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B081AA65-430B-4824-BE88-CE37D60C8B5A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{54E64BA1-4C13-4241-BE7E-6389B02B6591}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{54E64BA1-4C13-4241-BE7E-6389B02B6591}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{54E64BA1-4C13-4241-BE7E-6389B02B6591}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{54E64BA1-4C13-4241-BE7E-6389B02B6591}.Release|Any CPU.Build.0 = Release|Any CPU
+		{34A04C89-B6AB-4BB8-B02A-65ADCD7A8628}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{34A04C89-B6AB-4BB8-B02A-65ADCD7A8628}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{34A04C89-B6AB-4BB8-B02A-65ADCD7A8628}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{34A04C89-B6AB-4BB8-B02A-65ADCD7A8628}.Release|Any CPU.Build.0 = Release|Any CPU
+		{10F62594-CC8D-425A-A6C0-9E81C210BB7B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{10F62594-CC8D-425A-A6C0-9E81C210BB7B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{10F62594-CC8D-425A-A6C0-9E81C210BB7B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{10F62594-CC8D-425A-A6C0-9E81C210BB7B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

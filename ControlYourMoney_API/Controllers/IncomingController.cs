@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Threading.Tasks;
 using ControlYourMoney_Commands.Commands;
+using ControlYourMoney_Framework.Commands;
 using Microsoft.AspNetCore.Mvc;
 
 namespace ControlYourMoney.Controllers
@@ -14,7 +15,7 @@ namespace ControlYourMoney.Controllers
         {
             var dispatcher = new Dispatcher();
             var createIncomingCommand = new CreateIncoming(Guid.NewGuid(), createIncoming.Category, createIncoming.Amount, createIncoming.Comment, DateTime.Now);
-            await dispatcher.Dispatch(createIncoming);
+            await dispatcher.Dispatch(createIncomingCommand);
 
             return "command issued / event created";
         }
