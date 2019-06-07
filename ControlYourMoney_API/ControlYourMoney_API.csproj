@@ -38,4 +38,10 @@
     <PackageReference Include="EventStore.Client" Version="5.0.1" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\ControlYourMoney_Commands\ControlYourMoney_Commands.csproj" />
+    <ProjectReference Include="..\ControlYourMoney_Framework\ControlYourMoney_Framework.csproj" />
+    <ProjectReference Include="..\ControlYourMoney_Queries\ControlYourMoney_Queries.csproj" />
+  </ItemGroup>
+
 </Project>

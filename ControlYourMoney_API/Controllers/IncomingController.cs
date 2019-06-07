@@ -1,7 +1,10 @@
 ﻿using System;
+using System.Net;
 using System.Threading.Tasks;
 using ControlYourMoney_Commands.Commands;
+using ControlYourMoney_Framework;
 using ControlYourMoney_Framework.Commands;
+using EventStore.ClientAPI;
 using Microsoft.AspNetCore.Mvc;
 
 namespace ControlYourMoney.Controllers
@@ -13,7 +16,11 @@ namespace ControlYourMoney.Controllers
         [HttpPost]
         public async Task<ActionResult<string>> CreateIncoming(CreateIncoming createIncoming)
         {
-            var dispatcher = new Dispatcher();
+            var connection = EventStoreConnection.Create(new IPEndPoint(IPAddress.Loopback, 1113));
+            await connection.ConnectAsync();
+            var aggregateRepository = new AggregateRepository(connection);
+            var commandHandler = new CommandHandlers(aggregateRepository);
+            var dispatcher = new Dispatcher(commandHandler);
             var createIncomingCommand = new CreateIncoming(Guid.NewGuid(), createIncoming.Category, createIncoming.Amount, createIncoming.Comment, DateTime.Now);
             await dispatcher.Dispatch(createIncomingCommand);
 

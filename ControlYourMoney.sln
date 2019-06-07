@@ -11,7 +11,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ControlYourMoney_Commands",
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ControlYourMoney_Queries", "ControlYourMoney_Queries\ControlYourMoney_Queries.csproj", "{34A04C89-B6AB-4BB8-B02A-65ADCD7A8628}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassLibrary1", "ClassLibrary1\ClassLibrary1.csproj", "{10F62594-CC8D-425A-A6C0-9E81C210BB7B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ControlYourMoney_Framework", "ControlYourMoney_Framework\ControlYourMoney_Framework.csproj", "{4A179D83-B4B4-42CF-9303-8F7AF0787ABB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -37,10 +37,10 @@ Global
 		{34A04C89-B6AB-4BB8-B02A-65ADCD7A8628}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{34A04C89-B6AB-4BB8-B02A-65ADCD7A8628}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{34A04C89-B6AB-4BB8-B02A-65ADCD7A8628}.Release|Any CPU.Build.0 = Release|Any CPU
-		{10F62594-CC8D-425A-A6C0-9E81C210BB7B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{10F62594-CC8D-425A-A6C0-9E81C210BB7B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{10F62594-CC8D-425A-A6C0-9E81C210BB7B}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{10F62594-CC8D-425A-A6C0-9E81C210BB7B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4A179D83-B4B4-42CF-9303-8F7AF0787ABB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4A179D83-B4B4-42CF-9303-8F7AF0787ABB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4A179D83-B4B4-42CF-9303-8F7AF0787ABB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4A179D83-B4B4-42CF-9303-8F7AF0787ABB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
