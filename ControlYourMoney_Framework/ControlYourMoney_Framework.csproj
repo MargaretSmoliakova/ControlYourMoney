@@ -8,8 +8,4 @@
     <PackageReference Include="EventStore.Client" Version="5.0.1" />
   </ItemGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\ControlYourMoney_Commands\ControlYourMoney_Commands.csproj" />
-  </ItemGroup>
-
 </Project>

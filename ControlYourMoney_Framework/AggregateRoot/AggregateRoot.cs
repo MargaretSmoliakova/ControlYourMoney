@@ -31,7 +31,7 @@ namespace ControlYourMoney_Framework
             Version++;
         }
 
-        public void Rise(object obj)
+        protected void Rise(object obj)
         {
             _handlers[obj.GetType()](obj);
             _events.Add(obj);

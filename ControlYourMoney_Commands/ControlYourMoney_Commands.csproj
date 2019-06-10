@@ -4,4 +4,8 @@
     <TargetFramework>netcoreapp3.0</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\ControlYourMoney_Framework\ControlYourMoney_Framework.csproj" />
+  </ItemGroup>
+
 </Project>

@@ -1,5 +1,6 @@
 ﻿using ControlYourMoney_Commands.Commands;
 using System;
+using ControlYourMoney_Commands.AggregateRoots;
 
 namespace ControlYourMoney_Framework.Commands
 {
@@ -9,8 +10,7 @@ namespace ControlYourMoney_Framework.Commands
         {
             Register<CreateIncoming>(async x =>
             {
-                var aggregateRoot = new CreateIncoming(Guid.NewGuid(), x.Category, x.Amount, x.Comment, x.CreateDateTime);
-
+                var aggregateRoot = new IncomingAggregateRoot(Guid.NewGuid(), x.Category, x.Amount, x.Comment);
                 await repository.Save(aggregateRoot);
             });
         }

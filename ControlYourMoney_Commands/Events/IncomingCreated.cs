@@ -5,7 +5,7 @@ namespace ControlYourMoney_Commands.Events
 {
     public class IncomingCreated
     {
-        public IncomingCreated(Guid incomingId, Category category, double amount, string comment, DateTime createDateTime)
+        public IncomingCreated(Guid incomingId, Category category, double amount, string comment)
         {
             IncomingId = incomingId;
             Category = category;

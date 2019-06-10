@@ -14,13 +14,14 @@ namespace ControlYourMoney.Controllers
     public class IncomingController : ControllerBase
     {
         [HttpPost]
+        [Route("CreateIncoming")]
         public async Task<ActionResult<string>> CreateIncoming(CreateIncoming createIncoming)
         {
             var connection = EventStoreConnection.Create(new IPEndPoint(IPAddress.Loopback, 1113));
             await connection.ConnectAsync();
             var aggregateRepository = new AggregateRepository(connection);
-            var commandHandler = new CommandHandlers(aggregateRepository);
-            var dispatcher = new Dispatcher(commandHandler);
+            var commandHandlers = new CommandHandlers(aggregateRepository);
+            var dispatcher = new Dispatcher(commandHandlers);
             var createIncomingCommand = new CreateIncoming(Guid.NewGuid(), createIncoming.Category, createIncoming.Amount, createIncoming.Comment, DateTime.Now);
             await dispatcher.Dispatch(createIncomingCommand);
 
@@ -28,10 +29,10 @@ namespace ControlYourMoney.Controllers
         }
 
         [HttpGet]
-        [Route("{mobileInput}")]
-        public ActionResult<string> GetModifiedMobileInput(string mobileInput)
+        [Route("TestInput")]
+        public ActionResult GetModifiedMobileInput()
         {
-            return $"{mobileInput}_Returned_From_API";
+            return Ok(new CreateIncoming(Guid.NewGuid(), new ControlYourMoney_Commands.Models.Category(Guid.NewGuid(), "Salary"), 5700, "test comment", DateTime.Now));
         }
     }
 }

@@ -1,0 +1,43 @@
+{
+	"info": {
+		"_postman_id": "f7b93b84-aada-4c38-aa20-5b9f162d7a34",
+		"name": "ControlYourMoney_API",
+		"description": "Test Endpoints",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:5005/api/incoming/createincoming",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"incomingId\": \"8de16d67-f295-4d8f-b768-241d41a9994c\",\n    \"category\": {\n        \"categoryId\": \"48cb97e7-6f2f-48a8-865b-2541405b7f69\",\n        \"name\": \"Salary\"\n    },\n    \"amount\": 5700,\n    \"comment\": \"test comment\",\n    \"createDateTime\": \"2019-06-11T00:49:00.2376332+03:00\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:5005/api/incoming/createincoming",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5005",
+					"path": [
+						"api",
+						"incoming",
+						"createincoming"
+					]
+				},
+				"description": "POST || create test incoming"
+			},
+			"response": []
+		}
+	]
+}
